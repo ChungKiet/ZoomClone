@@ -6,7 +6,7 @@ import ContactsMenu from '../components/ContactsMenu'
 import MenuButtons from '../components/MenuButtons'
 
 
-function Home(){
+function Home({ navigation }){
    return (
       <View style={styles.container}>
          <SafeAreaView>
@@ -17,7 +17,7 @@ function Home(){
             <Searchbar/>
 
             {/* Menu Buttons */}
-            <MenuButtons/>
+            <MenuButtons navigation={navigation}/>
 
             {/* Contacts Menu */}
             <ContactsMenu/>
